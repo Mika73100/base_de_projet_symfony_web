@@ -3,8 +3,6 @@
 
 
 
-
-
 Je crée un nouveau projet symfony mise en place de mon environnement :
 
 -   J'installe symfony : symfony new my_project_directory --version="6.3.*" --webapp
@@ -15,15 +13,6 @@ ________________________________________________________________________________
                         🪛 La base de donnée
 
 
-
-________________________________________________________________________________
-
-                        🪛 La base de donnée
-
-
-
-                            
-                            
 
 -   mise en place de la base de donnée dans le .env
 -   installation de ORM : composer require symfony/orm-pack
@@ -70,7 +59,6 @@ ________________________________________________________________________________
 
 
 -   AuthLoginControllerAuthenticator je modifie ligne 52 la redirection login.
-
 
 
 ________________________________________________________________________________
