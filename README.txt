@@ -59,7 +59,7 @@ Crée un controller :
 
 ________________________________________________________________________________
 
-                            Configuration
+                             🪛 Configuration
 
 
 -   AuthLoginControllerAuthenticator je modifie ligne 52 la redirection login.
@@ -68,7 +68,7 @@ ________________________________________________________________________________
 
 ________________________________________________________________________________
 
-                            Dashboard Admin
+                             🪛 Dashboard Admin
 
 - installation du bundle : composer require easycorp/easyadmin-bundle
 - création du controller : php bin/console make:admin:dashboard
