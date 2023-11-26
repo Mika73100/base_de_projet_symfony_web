@@ -15,6 +15,12 @@ Je crée un nouveau projet symfony mise en place de mon environnement :
 </div>
 
 
+<div align="center">________________________________________________________________________________<br><br>
+        <h2>🪛 La base de donnée </h2><br><br>
+</div>
+
+
+                            
                             
 
 -   mise en place de la base de donnée dans le .env
@@ -30,7 +36,11 @@ Inscription de la base de donnée sur MYSQL :
 <div align="center">________________________________________________________________________________<br><br>
 
                                    <h2>🪛 USER</h2><br><br>
+<div align="center">________________________________________________________________________________<br><br>
 
+                                   <h2>🪛 USER</h2><br><br>
+
+</div>
 </div>
 
 Crée l'entity USER : 
