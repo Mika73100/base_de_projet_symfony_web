@@ -1,12 +1,6 @@
-<<<<<<< HEAD
-<div align="center"><img src="https://img.shields.io/badge/Symfony-000000?style=for-the-badge&logo=Symfony&logoColor=white" /><br><br>
-        <h1> Symfony 6 🔝</h1><br><br>
-</div>
-=======
 
         Symfony 6 🔝
 
->>>>>>> 0d34dd00de3b21522f73e92f08c428f83467c565
 
 
 
@@ -17,13 +11,15 @@ Je crée un nouveau projet symfony mise en place de mon environnement :
 
 
 ________________________________________________________________________________
+
                         🪛 La base de donnée
 
 
 
-<div align="center">________________________________________________________________________________<br><br>
-        <h2>🪛 La base de donnée </h2><br><br>
-</div>
+________________________________________________________________________________
+
+                        🪛 La base de donnée
+
 
 
                             
@@ -43,17 +39,6 @@ ________________________________________________________________________________
 
                                    🪛 USER
 
-<<<<<<< HEAD
-                                   <h2>🪛 USER</h2><br><br>
-<div align="center">________________________________________________________________________________<br><br>
-
-                                   <h2>🪛 USER</h2><br><br>
-
-</div>
-</div>
-=======
-
->>>>>>> 0d34dd00de3b21522f73e92f08c428f83467c565
 
 Crée l'entity USER : 
 
@@ -101,10 +86,6 @@ ________________________________________________________________________________
     path: /admin
     controller: App\Controller\Admin\DashboardController::index
 
-<<<<<<< HEAD
-- crée la vue twig : {% extends '@EasyAdmin/page/content.html.twig' %}
-=======
 - crée la vue twig : {% extends '@EasyAdmin/page/content.html.twig' %}
 
 
->>>>>>> 0d34dd00de3b21522f73e92f08c428f83467c565
