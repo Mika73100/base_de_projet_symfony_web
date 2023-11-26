@@ -1,6 +1,12 @@
+<<<<<<< HEAD
 <div align="center"><img src="https://img.shields.io/badge/Symfony-000000?style=for-the-badge&logo=Symfony&logoColor=white" /><br><br>
         <h1> Symfony 6 🔝</h1><br><br>
 </div>
+=======
+
+        Symfony 6 🔝
+
+>>>>>>> 0d34dd00de3b21522f73e92f08c428f83467c565
 
 
 
@@ -10,9 +16,9 @@ Je crée un nouveau projet symfony mise en place de mon environnement :
 -   J'installe symfony : symfony new my_project_directory --version="6.3.*" --webapp
 
 
-<div align="center">________________________________________________________________________________<br><br>
-        <h2>🪛 La base de donnée </h2><br><br>
-</div>
+________________________________________________________________________________
+                        🪛 La base de donnée
+
 
 
 <div align="center">________________________________________________________________________________<br><br>
@@ -33,8 +39,11 @@ Inscription de la base de donnée sur MYSQL :
 
 [ La base de donnée à été crée ]
 
-<div align="center">________________________________________________________________________________<br><br>
+________________________________________________________________________________
 
+                                   🪛 USER
+
+<<<<<<< HEAD
                                    <h2>🪛 USER</h2><br><br>
 <div align="center">________________________________________________________________________________<br><br>
 
@@ -42,6 +51,9 @@ Inscription de la base de donnée sur MYSQL :
 
 </div>
 </div>
+=======
+
+>>>>>>> 0d34dd00de3b21522f73e92f08c428f83467c565
 
 Crée l'entity USER : 
 
@@ -69,7 +81,7 @@ Crée un controller :
 
 ________________________________________________________________________________
 
-                            Configuration
+                             🪛 Configuration
 
 
 -   AuthLoginControllerAuthenticator je modifie ligne 52 la redirection login.
@@ -78,7 +90,7 @@ ________________________________________________________________________________
 
 ________________________________________________________________________________
 
-                            Dashboard Admin
+                             🪛 Dashboard Admin
 
 - installation du bundle : composer require easycorp/easyadmin-bundle
 - création du controller : php bin/console make:admin:dashboard
@@ -89,4 +101,10 @@ ________________________________________________________________________________
     path: /admin
     controller: App\Controller\Admin\DashboardController::index
 
+<<<<<<< HEAD
 - crée la vue twig : {% extends '@EasyAdmin/page/content.html.twig' %}
+=======
+- crée la vue twig : {% extends '@EasyAdmin/page/content.html.twig' %}
+
+
+>>>>>>> 0d34dd00de3b21522f73e92f08c428f83467c565
