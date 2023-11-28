@@ -45,6 +45,7 @@ Crée l'enregistrement :
 
 -   je rajoute : use Symfony\Component\Form\Extension\Core\Type\RepeatedType;
 -   je modifie le formulaire : ->add('plainPassword', RepeatedType::class,...etc)
+-   je rajoute les regexes dans le formulaire directement avec 12 caractères minimum
 
 Crée un controller :
 

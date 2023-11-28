@@ -4,6 +4,7 @@ namespace App\Form;
 
 use App\Entity\User;
 use Symfony\Component\Form\AbstractType;
+use Symfony\Component\Validator\Constraints as Assert;
 use Symfony\Component\Form\Extension\Core\Type\RepeatedType;
 use Symfony\Component\Form\Extension\Core\Type\CheckboxType;
 use Symfony\Component\Form\Extension\Core\Type\PasswordType;
@@ -37,11 +38,28 @@ class RegistrationFormType extends AbstractType
                 'constraints' => [
                     new NotBlank([
                         'message' => 'Please enter a password',
+
                     ]),
                     new Length([
-                        'min' => 6,
+                        'min' => 12,
                         'minMessage' => 'Your password should be at least {{ limit }} characters',
                         'max' => 4096,
+                    ]),
+                    new Regex([
+                        'pattern' => '/(?=.*[a-z])/',
+                        'message' => 'Your password must contain at least one lowercase letter',
+                    ]),
+                    new Regex([
+                        'pattern' => '/(?=.*[A-Z])/',
+                        'message' => 'Your password must contain at least one uppercase letter',
+                    ]),
+                    new Regex([
+                        'pattern' => '/(?=.*\d)/',
+                        'message' => 'Your password must contain at least one number',
+                    ]),
+                    new Regex([
+                        'pattern' => '/(?=.*[!@#$%^&*])/',
+                        'message' => 'Your password must contain at least one special character',
                     ]),
                 ],
                 'first_options'  => ['label' => 'Password'],
