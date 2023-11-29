@@ -44,24 +44,24 @@ class RegistrationFormType extends AbstractType
                     ]),
                     new Length([
                         'min' => 12,
-                        'minMessage' => 'Your password should be at least {{ limit }} characters',
+                        'minMessage' => 'Votre mot de passe doit comporter au moins {{ limite }} caractères.',
                         'max' => 4096,
                     ]),
                     new Regex([
                         'pattern' => '/(?=.*[a-z])/',
-                        'message' => 'Your password must contain at least one lowercase letter',
+                        'message' => 'Votre mot de passe doit contenir au moins une lettre minuscule',
                     ]),
                     new Regex([
                         'pattern' => '/(?=.*[A-Z])/',
-                        'message' => 'Your password must contain at least one uppercase letter',
+                        'message' => 'Votre mot de passe doit contenir au moins une lettre majuscule.',
                     ]),
                     new Regex([
                         'pattern' => '/(?=.*\d)/',
-                        'message' => 'Your password must contain at least one number',
+                        'message' => 'Your password must contain at least one number.',
                     ]),
                     new Regex([
                         'pattern' => '/(?=.*[!@#$%^&*])/',
-                        'message' => 'Your password must contain at least one special character',
+                        'message' => 'Votre mot de passe doit contenir au moins un chiffre.',
                     ]),
                 ],
                 'first_options'  => ['label' => 'Password'],
