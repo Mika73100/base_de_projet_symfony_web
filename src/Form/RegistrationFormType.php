@@ -57,11 +57,11 @@ class RegistrationFormType extends AbstractType
                     ]),
                     new Regex([
                         'pattern' => '/(?=.*\d)/',
-                        'message' => 'Your password must contain at least one number.',
+                        'message' => 'Votre mot de passe doit contenir au moins un chiffre.',
                     ]),
                     new Regex([
                         'pattern' => '/(?=.*[!@#$%^&*])/',
-                        'message' => 'Votre mot de passe doit contenir au moins un chiffre.',
+                        'message' => 'Votre mot de passe doit contenir au moins un caractère spécial.',
                     ]),
                 ],
                 'first_options'  => ['label' => 'Password'],
