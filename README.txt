@@ -78,3 +78,34 @@ ________________________________________________________________________________
 - crée la vue twig : {% extends '@EasyAdmin/page/content.html.twig' %}
 
 
+________________________________________________________________________________
+-> ici j'ai suivie le tutto : https://www.youtube.com/watch?v=ZPqcKl2Izt0&t=2647s
+/!\ En cas d'erreur aller dans SecurityController et supprimer après le commentaire tutto.
+//supprimer les formulaire et les vue twig + .json les dépendance email.
+________________________________________________________________________________
+
+                             🪛 Reset Password
+
+- Création d'une route dans le controller security
+- Création d'une page twig pour le reset de password
+
+- Mise en place d'un nouveau formulaire : symfony console make:form
+- Dans le form modifier le add avec la valeur qu'on souhaite ( exemple: email )
+- Dans la vue appeler le formulaire crée : {{ form(ResetPasswordFormType)}}
+
+
+________________________________________________________________________________
+
+                             🪛 Reset Password par Email
+
+- composer require symfony/mime: On va pouvoir créer un objet Email.
+- composer require symfony/mailer: pour l'envoie d'email.
+- Je rajoute le templates twig pour l'envoie de l'email.
+- rajouter les variables d'environnement dans le .env : 
+            -> MESSENGER_TRANSPORT_DSN=doctrine://default
+            -> MAILER_DSN=smtp://EMAIL:PASSWORD@gmail
+
+
+
+
+
